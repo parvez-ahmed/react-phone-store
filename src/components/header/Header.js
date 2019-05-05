@@ -16,7 +16,10 @@ class Header extends Component{
                   <img src={logo}></img>
                  </Link>
                  
-                  <h1 className="heading-size">Products</h1>
+                 <Link to="/" style={styleNone}>
+                 <h1 className="heading-size" style={productHeading}>Products</h1>
+                 </Link>
+                  
                  </div>
 
                  <div className="secondPart">
@@ -32,3 +35,15 @@ class Header extends Component{
 }
 
 export default Header;
+
+
+const productHeading = {
+    margin:"0px",
+    padding:"0px",
+    color:"white",
+    underline:"none"
+}
+
+const styleNone = {
+    all:"unset"
+}
